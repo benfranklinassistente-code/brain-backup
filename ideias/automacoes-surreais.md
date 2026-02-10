@@ -14,11 +14,23 @@
 **Descrição:** Otimizar ofertas usando frameworks de Alex Hormozi  
 **Impacto:** ⭐⭐⭐⭐⭐
 
+### #16 - Assistente Pessoal 24/7 ⭐ NOVO!
+**Status:** ✅ Documentação completa  
+**GitHub:** https://github.com/benfranklinassistente-code/automacoes-surreais/tree/master/16-assistente-pessoal  
+**Descrição:** Assistente que trabalha 24/7, rotina diária, modo foco, dashboard  
+**Impacto:** ⭐⭐⭐⭐⭐
+
 ### #19 - Clone de Voz
 **Status:** ✅ Documentação completa  
 **GitHub:** https://github.com/benfranklinassistente-code/automacoes-surreais/tree/master/19-clone-voz  
 **Descrição:** Criar áudios personalizados com voz clonada  
 **Impacto:** ⭐⭐⭐⭐
+
+### #19 - Clonagem de Tarefas Repetitivas ⭐ NOVO!
+**Status:** ✅ Documentação completa  
+**GitHub:** https://github.com/benfranklinassistente-code/automacoes-surreais/tree/master/19-clonagem-tarefas  
+**Descrição:** Detecta padrões após 3 repetições e oferece automação  
+**Impacto:** ⭐⭐⭐⭐⭐
 
 ---
 
@@ -39,8 +51,20 @@
 9. **#9** - Certificados Automáticos
 10. **#10** - Dashboard de Negócio Vivo
 11. **#11** - Previsão de Receita (ML)
-12. **#12 a #20** - Outras automações
+12. **#12 a #15** - Outras automações
+
+---
+
+## 📊 STATUS ATUAL
+
+| Status | Quantidade | Automações |
+|--------|------------|------------|
+| ✅ Documentadas | 5 | #4, #16 (x2), #19 (x2) |
+| ⏳ Pendentes | 15 | #1-3, #5-15 |
+| **Total** | **20** | - |
 
 ---
 
 **Repositório completo:** https://github.com/benfranklinassistente-code/automacoes-surreais
+
+**Última atualização:** 10/02/2026
