@@ -89,6 +89,10 @@
   - A cada 6h: Detecta padrões
   - 21:00: Relatório diário
 
+- **🔔 Notícias OpenClaw** ✅ Rodando
+  - Diariamente 06:00: 15 notícias sobre IA, APIs, OpenClaw
+  - Links e fontes para consulta
+
 ### Interstellar OpenClaud
 - **Status:** Funcionando
 - **GitHub:** benfranklinassistente-code/interstellar-openclaud
