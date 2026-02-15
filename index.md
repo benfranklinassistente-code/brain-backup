@@ -4,6 +4,14 @@
 
 ## 📅 Últimas Atualizações
 
+### 2026-02-15 - Integração Google Sheets + Telegram
+- ✅ Telegram conectado e funcionando
+- ✅ GitHub configurado com token
+- ✅ Google Sheets integrado (Controle Financeiro)
+- ✅ Planilha financeira organizada e corrigida
+- ✅ Sistema de registro automático de receitas/despesas
+- 📊 Resumo: R$ 2.659,00 receitas | R$ 820,24 despesas | Saldo: R$ 1.838,76
+
 ### 2026-02-10 - Grande Sessão de Automações
 - ✅ Deploy 60maisPlay no Railway
 - ✅ Sistema Brain Backup criado
@@ -70,6 +78,24 @@
 - **Status:** Funcionando
 - **GitHub:** benfranklinassistente-code/interstellar-openclaud
 - **Uso:** Gerenciamento de tarefas
+
+---
+
+## 🔐 ACESSOS IMPORTANTES
+
+Ver arquivo: [config/acessos.md](config/acessos.md)
+
+### Google Sheets
+- **Planilha:** Controle Financeiro - Receitas e Despesas
+- **Link:** [Abrir planilha](https://docs.google.com/spreadsheets/d/1VhY95rXzg9UjVnjr21nuOVpxhEuM3N8HN1TeeFrX7X8/edit)
+
+### GitHub
+- **Usuário:** benfranklinassistente-code
+- **Token:** Salvo em variável GH_TOKEN
+
+### Telegram
+- **Bot:** Configurado e funcionando
+- **User ID Luís:** 1007517562
 
 ---
 
