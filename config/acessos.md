@@ -48,4 +48,15 @@ registrarTransacao('RECEITA', '60mais Paulista', 'Descrição', 100, 'Pix');
 
 ---
 
+## Trello
+
+- **API Key:** Salva em `/root/.openclaw/workspace/trello-config.json`
+- **Quadros:**
+  - Ben Trello: https://trello.com/b/1KZVgPzS/ben-trello
+  - GTD: https://trello.com/b/0wWbycT6/gtd
+- **Listas principais:** Ben Fazer, Ben Concluído, Lead Magnets, PRODUTO 60MAIS
+- **Módulo:** `/root/.openclaw/workspace/trello.js`
+
+---
+
 *Atualizado: 15/02/2026*
