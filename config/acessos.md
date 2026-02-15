@@ -4,6 +4,7 @@
 
 - **Nome:** Luís
 - **Email pessoal:** luis7nico@gmail.com
+- **WhatsApp:** +55 11 92099-0001
 - **Fuso-horário:** America/Sao_Paulo (UTC-3 / Brasília)
 - **Idioma:** Português do Brasil
 
