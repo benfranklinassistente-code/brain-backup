@@ -59,4 +59,21 @@ registrarTransacao('RECEITA', '60mais Paulista', 'Descrição', 100, 'Pix');
 
 ---
 
+## Email - Hostgator Titan
+
+- **Email:** benjamin@60maiscursos.com.br
+- **Credenciais:** Salvas em `/root/.openclaw/workspace/email-config.json`
+
+### Configurações:
+| Protocolo | Servidor | Porta |
+|-----------|----------|-------|
+| IMAP | imap.titan.email | 993 |
+| SMTP | smtp.titan.email | 465 |
+| POP | pop.titan.email | 995 |
+
+### Módulo:
+- `/root/.openclaw/workspace/email.js`
+
+---
+
 *Atualizado: 15/02/2026*
