@@ -61,7 +61,7 @@ registrarTransacao('RECEITA', '60mais Paulista', 'Descrição', 100, 'Pix');
 
 ## Email - Hostgator Titan
 
-- **Email:** benjamin@60maiscursos.com.br
+- **Email Ben (trabalho):** benjamin@60maiscursos.com.br
 - **Credenciais:** Salvas em `/root/.openclaw/workspace/email-config.json`
 
 ### Configurações:
@@ -73,6 +73,13 @@ registrarTransacao('RECEITA', '60mais Paulista', 'Descrição', 100, 'Pix');
 
 ### Módulo:
 - `/root/.openclaw/workspace/email.js`
+
+---
+
+## Email Pessoal - Luís
+
+- **Email:** luis7nico@gmail.com
+- **Uso:** Contato pessoal e principal
 
 ---
 
