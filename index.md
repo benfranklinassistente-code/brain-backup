@@ -74,6 +74,21 @@
 - **GitHub:** benfranklinassistente-code/60maisplay-plataforma
 - **Próximo passo:** Correções de acessibilidade + Admin
 
+### Automações Surreais (PM2)
+- **#16 Assistente Pessoal 24/7** ✅ Rodando
+  - 06:00: Bom dia + agenda
+  - 08:00: Briefing do nicho 60+
+  - 12:00: Hora do almoço
+  - 18:00: Fim do expediente
+  - 20:00: Preparação amanhã
+
+- **#4 Lead Magnet Infinito** ✅ Rodando
+  - Segundas 09:00: Gera novo lead magnet automaticamente
+
+- **#19 Clonagem de Tarefas** ✅ Rodando
+  - A cada 6h: Detecta padrões
+  - 21:00: Relatório diário
+
 ### Interstellar OpenClaud
 - **Status:** Funcionando
 - **GitHub:** benfranklinassistente-code/interstellar-openclaud
