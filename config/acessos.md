@@ -1,5 +1,14 @@
 # 🔐 ACESSOS E CREDENCIAIS
 
+## Informações do Usuário
+
+- **Nome:** Luís
+- **Email pessoal:** luis7nico@gmail.com
+- **Fuso-horário:** America/Sao_Paulo (UTC-3 / Brasília)
+- **Idioma:** Português do Brasil
+
+---
+
 ## Google Sheets - Controle Financeiro
 
 - **Planilha:** Controle Financeiro - Receitas e Despesas
