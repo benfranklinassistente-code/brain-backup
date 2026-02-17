@@ -117,6 +117,8 @@ pm2 stop all       # Parar todas
 
 ## 📧 EMAILS
 
+> **Arquivo de e-mails importantes:** `memory/emails-importantes.md`
+
 ### Email do Ben (trabalho):
 - **Email:** benjamin@60maiscursos.com.br
 - **Credenciais:** Salvas em `/root/.openclaw/workspace/email-config.json`
@@ -171,6 +173,22 @@ pm2 stop all       # Parar todas
 - Prefere DOCX para arquivos
 - Railway para testes, Hostgator para produção
 - Focado em automações que poupam tempo
+
+---
+### 📰 60maisNews - Newsletter
+- **Nome:** 60maisNews
+- **Envio:** Brevo (102 contatos, API configurada)
+- **Frequência:** Diária às 06:06
+- **Público:** Idosos 60+ interessados em tecnologia
+- **Técnica:** StorySelling (S.L.P.C.)
+- **Arquivo completo:** `memory/60maisNews-newsletter.md`
+
+**Estrutura S.L.P.C. Híbrida:**
+```
+Reflexão → Story → Lesson → Pivot + Dicas → CTA
+```
+
+**Tom:** Afetuoso, metáforas familiares, emojis, ofertas casuais
 
 ---
 *Memória restaurada do GitHub em: 15/02/2026*
