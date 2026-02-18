@@ -1,194 +1,291 @@
-# MEMORY.md - Memória Principal
+# 📰 REDAÇÃO 60maisNews - DOCUMENTAÇÃO COMPLETA
+## Sistema Autônomo de Newsletter para Idosos
 
-## 🧠 Contexto Recuperado do Brain Backup
-
-### 📍 Informações Básicas
-- **Nome:** Luís
-- **Fuso-horário:** America/Sao_Paulo (UTC-3 / Brasília)
-- **Idioma:** Português do Brasil
-
-Última sessão importante: 10/02/2026 (~10 horas de trabalho)
+**Última atualização:** 17/02/2026 21:22 UTC
 
 ---
 
-## 📌 DECISÕES IMPORTANTES
+## 🎯 VISÃO GERAL
 
-### Decisão #001 - Priorização 60maisPlay
-- **Data:** 2026-02-10
-- **Decisão:** Manter banco JSON para testes → MySQL na Hostgator DEPOIS de:
-  1. Barra de acessibilidade
-  2. Página de admin
-- **Motivo:** Frontend precisa estar perfeito antes da migração
+A **Redação 60maisNews** é uma equipe de agentes automatizados que produz uma newsletter diária de tecnologia para pessoas 60+ anos. O sistema é **100% automatizado** e usa dados reais para escolher temas dinâmicos.
 
----
+### 👥 Equipe de Agentes
 
-## 🚀 PROJETOS
+| Agente | Cargo | Função |
+|--------|-------|--------|
+| Agente Chefe | Editor-Chefe | Orquestra toda a redação |
+| GANCHOS | Pesquisador de Pautas | Descobre tema (Brave + Analytics) |
+| WRITER | Redator | Gera conteúdo |
+| VENDAS | Gerente de Monetização | Cria CTAs |
+| ENVIO | Distribuidor | Envia emails |
+| BLOG | Publicador Web | Publica no WordPress |
+| TRELLO | Arquivista | Registra no quadro |
 
-### 60maisPlay
-- **Status:** Online (Railway)
-- **URL:** https://web-production-df2db.up.railway.app
-- **GitHub:** benfranklinassistente-code/60maisplay-plataforma
-- **Próximo:** Acessibilidade → Admin → MySQL → Pagamento
-
-### Automações Surreais
-- **GitHub:** benfranklinassistente-code/automacoes-surreais
-- **Operacionais:** 3 (#4, #16, #19)
-- **Pendentes:** 15
+### Persona
+- **Professor Luis** - canal 60maisPlay
+- Linguagem simples, carinhosa, sem jargões técnicos
+- Conteúdo APLICÁVEL - o leitor resolve o problema
 
 ---
 
-## ✅ CHECKLIST PRÓXIMA SESSÃO
+## ✅ STATUS ATUAL
 
-### URGENTE
-- [ ] Corrigir barra de acessibilidade (não apareceu)
-- [ ] Adicionar botões: fonte, contraste, modo escuro
-- [ ] Criar página de admin completa
-
-### IMPORTANTE
-- [ ] Configurar MySQL na Hostgator
-- [ ] Migrar dados JSON → MySQL
-- [ ] Sistema de pagamento (Hotmart/MercadoPago)
-
----
-
-## 📊 CONTROLE FINANCEIRO
-
-- **Planilha:** Controle Financeiro - Receitas e Despesas
-- **ID:** 1VhY95rXzg9UjVnjr21nuOVpxhEuM3N8HN1TeeFrX7X8
-- **Link:** https://docs.google.com/spreadsheets/d/1VhY95rXzg9UjVnjr21nuOVpxhEuM3N8HN1TeeFrX7X8/edit
-- **Service Account:** id-0mais-sheets-service@openclaw-2026-487017.iam.gserviceaccount.com
-- **Arquivo de credenciais:** /root/.config/gcloud/service-account.json
-
-### Resumo Atual (15/02/2026):
-- 💚 Receitas: R$ 2.659,00
-- 🔴 Despesas: R$ 820,24
-- 📈 Saldo: R$ 1.838,76
-- 📝 Registros: 29
-
-### Como registrar:
-- "gastei X em [categoria]" → Despesa
-- "recebi X de [cliente]" → Receita
-
-### Categorias conhecidas:
-- **Receita:** 60mais Paulista, Vendas, Aula Particular, Aulas Presenciais
-- **Despesa:** Pessoal, Transporte, Trabalho/Escritório, Alimentação, Telefonia/Internet, Cartão, Educação/Conteúdo, Tecnologia
-
-### Formas de Pagamento usadas:
-- Pix, Transferência, Cartão, Dinheiro/Cartão, Cartão de Crédito
+| Componente | Status | Arquivo |
+|------------|--------|---------|
+| Brave Search | ✅ Funcionando | `brave-search.js` |
+| Google Analytics | ✅ Funcionando | `analytics-maton.js` |
+| Histórico de Temas | ✅ Funcionando | `historico-temas.js` |
+| Brevo (Email) | ✅ Funcionando | `brevo.js` |
+| WordPress (Blog) | ✅ Funcionando | `wordpress.js` |
+| Produtos/CTA | ✅ Funcionando | `produtos-60mais.js` |
+| Templates HTML | ✅ Funcionando | `newsletter-template.js` |
+| CRON | ✅ Configurado | 05:00 UTC |
 
 ---
 
-## 🚀 AUTOMAÇÕES ATIVAS (PM2)
+## 📁 ESTRUTURA DE ARQUIVOS
 
-| # | Nome | Status | Horários |
-|---|------|--------|----------|
-| 16 | Assistente Pessoal 24/7 | ✅ Online | 06:00, 08:00, 12:00, 18:00, 20:00 |
-| 4 | Lead Magnet Semanal | ✅ Online | Segundas 09:00 |
-| 19 | Clonagem de Tarefas | ✅ Online | A cada 6h, 21:00 |
-| 🔔 | Notícias OpenClaw | ✅ Online | **Diariamente 06:00** |
+```
+/root/.openclaw/workspace/
+│
+├── 🤖 FLUXO PRINCIPAL
+│   ├── ganchos-tema.js          # Descobre tema (Brave + Analytics)
+│   ├── escritor-envia.js        # Envia email + publica blog
+│   └── agente-chefe-60mais.js   # Executa tudo junto
+│
+├── 📦 MÓDULOS
+│   ├── brave-search.js          # Pesquisa web via Brave
+│   ├── analytics-maton.js       # Google Analytics via Maton
+│   ├── historico-temas.js       # Controle 30 dias sem repetir
+│   ├── brevo.js                 # API de email
+│   ├── wordpress.js             # API do blog
+│   ├── produtos-60mais.js       # Catálogo R$37
+│   └── newsletter-template.js   # Templates HTML
+│
+├── ⚙️ CONFIGURAÇÕES
+│   ├── credenciais-60mais.json  # Todas as credenciais
+│   ├── calendario-comercial-60mais-2026.json
+│   └── historico-temas.json     # Gerado automaticamente
+│
+├── 📄 ARQUIVOS TEMPORÁRIOS (gerados no fluxo)
+│   ├── tema-selecionado.json    # Tema escolhido
+│   └── conteudo-gerado.json     # Conteúdo do Ben
+│
+└── 📚 SKILLS
+    ├── brave-search/            # Skill Brave Search
+    └── google-analytics/        # Skill Maton
+```
 
-### Notícias OpenClaw (Novo!):
-Todo dia às 06:00, o Ben envia:
-- 15 notícias sobre OpenClaw, IA, APIs
-- Atualizações de Claude, OpenAI, Anthropic
-- APIs gratuitas e frameworks
-- Links e fontes para consulta
+---
 
-### Comandos PM2:
+## 🔧 CREDENCIAIS CONFIGURADAS
+
+| Serviço | Status | Local |
+|---------|--------|-------|
+| Brevo | ✅ | `credenciais-60mais.json` |
+| WordPress | ✅ | `credenciais-60mais.json` |
+| Trello | ✅ | `credenciais-60mais.json` |
+| Brave Search | ✅ | `credenciais-60mais.json` |
+| Maton (Analytics) | ✅ | `credenciais-60mais.json` |
+| WhatsApp | ✅ | (11) 95354-5939 |
+
+---
+
+## 📊 FLUXO DE EXECUÇÃO
+
+### Opção 1: Fluxo Separado (Recomendado)
+
 ```bash
-pm2 list           # Ver status
-pm2 logs           # Ver logs
-pm2 restart all    # Reiniciar todas
-pm2 stop all       # Parar todas
+# PASSO 1: Descobrir tema
+node ganchos-tema.js
+
+# PASSO 2: Ben gera o conteúdo (salva em conteudo-gerado.json)
+# (Executado pela IA)
+
+# PASSO 3: Enviar e publicar
+node escritor-envia.js
+```
+
+### Opção 2: Fluxo Unificado
+
+```bash
+node agente-chefe-60mais.js
 ```
 
 ---
 
-## 🔗 LINKS ÚTEIS
+## 🎯 SELEÇÃO DE TEMA
 
-- **Plataforma:** https://web-production-df2db.up.railway.app
-- **GitHub principal:** https://github.com/benfranklinassistente-code
-- **Brain Backup:** /root/.openclaw/workspace/brain-backup/
-- **Planilha Financeiro:** https://docs.google.com/spreadsheets/d/1VhY95rXzg9UjVnjr21nuOVpxhEuM3N8HN1TeeFrX7X8/edit
-- **Trello Ben:** https://trello.com/b/1KZVgPzS/ben-trello
-- **Trello GTD:** https://trello.com/b/0wWbycT6/gtd
+### Prioridade de Seleção
 
----
+1. **Google Analytics** - Posts mais visualizados (se não usado nos últimos 30 dias)
+2. **Brave Search** - Tendências do dia (se não usado nos últimos 30 dias)
+3. **Fallback Temporal** - Baseado no dia da semana
 
-## 📧 EMAILS
+### Regra de 30 Dias
 
-> **Arquivo de e-mails importantes:** `memory/emails-importantes.md`
+O sistema **NÃO REPETE** o mesmo tema por 30 dias:
 
-### Email do Ben (trabalho):
-- **Email:** benjamin@60maiscursos.com.br
-- **Credenciais:** Salvas em `/root/.openclaw/workspace/email-config.json`
-- **Servidor:** Hostgator - Titan
+- Arquivo: `historico-temas.json`
+- Módulo: `historico-temas.js`
+- Funções:
+  - `temaRecente(tema)` - Verifica se foi usado
+  - `registrarTema(tema)` - Registra uso
+  - `temasDisponiveis()` - Lista disponíveis
 
-### Email do Luís (pessoal):
-- **Email:** luis7nico@gmail.com
-- **Uso:** Contato pessoal e principal
+### Temas Disponíveis
 
-### Configurações IMAP/SMTP:
-| Protocolo | Servidor | Porta | Segurança |
-|-----------|----------|-------|-----------|
-| IMAP | imap.titan.email | 993 | SSL/TLS |
-| SMTP | smtp.titan.email | 465 | SSL/TLS |
-| POP | pop.titan.email | 995 | SSL/TLS |
-
-### Módulo:
-- `/root/.openclaw/workspace/email.js`
+1. golpe PIX
+2. WhatsApp segurança
+3. videochamada
+4. aplicativo idoso
+5. segurança celular
+6. Google Fotos
+7. senha banco
+8. Facebook segurança
 
 ---
 
-## 📋 TRELLO - INTEGRAÇÃO ATIVA
+## 📧 ENVIO DE EMAIL
 
-### Quadros:
-- **Ben Trello** → Trabalho e tarefas do Ben
-- **GTD** → Gestão pessoal do Luís
+### Modo Teste
+- `MODO_TESTE = true`
+- Envia apenas para: `luis7nico@gmail.com`
 
-### Listas principais (Ben Trello):
-| Lista | Uso |
-|-------|-----|
-| **Ben Fazer** | Tarefas para o Ben |
-| **Ben Concluído** | Tarefas finalizadas |
-| 📚 Lead Magnets | Ebooks e materiais |
-| PRODUTO 60MAIS | Desenvolvimento da plataforma |
-| 🤖 Agentes | Automações |
-
-### O que o Ben pode fazer:
-- ✅ Criar cartões em qualquer lista
-- ✅ Mover cartões entre listas
-- ✅ Adicionar comentários
-- ✅ Criar checklists
-- ✅ Arquivar cartões
-
-### Credenciais salvas em:
-`/root/.openclaw/workspace/trello-config.json`
+### Modo Produção
+- `MODO_TESTE = false`
+- Envia para lista Brevo ID 4 (~102 assinantes)
 
 ---
 
-## 📝 NOTAS
+## 💰 PRODUTOS (CTA R$37)
 
-- Luís valoriza organização e memória
-- Prefere DOCX para arquivos
-- Railway para testes, Hostgator para produção
-- Focado em automações que poupam tempo
+| Tema | Produto | Conexão |
+|------|---------|---------|
+| golpe PIX / senha / segurança | Mini Segurança Digital | "Proteja seu dinheiro!" |
+| videochamada / netos | Mini Videochamadas | "Veja seus netos!" |
+| WhatsApp | Mini WhatsApp | "Domine o WhatsApp!" |
+| fotos / álbum | Mini Google Fotos | "Guarde memórias!" |
+| aplicativos | Mini Apps Essenciais | "Facilite seu dia!" |
 
 ---
-### 📰 60maisNews - Newsletter
-- **Nome:** 60maisNews
-- **Envio:** Brevo (102 contatos, API configurada)
-- **Frequência:** Diária às 06:06
-- **Público:** Idosos 60+ interessados em tecnologia
-- **Técnica:** StorySelling (S.L.P.C.)
-- **Arquivo completo:** `memory/60maisNews-newsletter.md`
 
-**Estrutura S.L.P.C. Híbrida:**
+## 📝 ESTRUTURA DO CONTEÚDO
+
+```json
+{
+  "titulo": "🚨 Título com Emoji",
+  "tema": "golpe PIX",
+  "reflexao": "🌟 Frase inspiradora...",
+  "story": "História emocional de 150-200 palavras...",
+  "lesson": "Lição de 30-50 palavras...",
+  "tutorial": {
+    "titulo": "🛡️ TUTORIAL COMPLETO...",
+    "introducao": "...",
+    "passos": [
+      {
+        "numero": 1,
+        "titulo": "...",
+        "explicacao": "...",
+        "acao": "...",
+        "exemplo": "..."
+      }
+    ],
+    "checklist": "☐ Item 1\n☐ Item 2..."
+  },
+  "oQueMaisAprender": "Bridge para produto...",
+  "seguranca": "Dica extra...",
+  "score": 9.0
+}
 ```
-Reflexão → Story → Lesson → Pivot + Dicas → CTA
-```
-
-**Tom:** Afetuoso, metáforas familiares, emojis, ofertas casuais
 
 ---
-*Memória restaurada do GitHub em: 15/02/2026*
+
+## 🔄 HISTÓRICO DE MELHORIAS
+
+### 17/02/2026
+
+| Hora | Melhoria |
+|------|----------|
+| 14:00 | Criado sistema de documentação |
+| 14:17 | Teste inicial - tema "aplicativo idoso" |
+| 14:34 | Bug corrigido no template |
+| 14:37 | Email + Blog funcionando |
+| 15:00 | Skill Brave Search instalada |
+| 15:22 | Skill Google Analytics instalada |
+| 15:32 | Maton conectado ao Google Analytics |
+| 16:07 | Módulo `brave-search.js` criado |
+| 16:27 | Módulo `analytics-maton.js` criado |
+| 16:43 | `agente-chefe-60mais.js` atualizado para usar Brave + Analytics |
+| 17:01 | Fluxo completo funcionando com dados reais |
+| 17:13 | Fluxo separado: GANCHOS → BEN → ESCRITOR |
+| 17:20 | Sistema de histórico 30 dias implementado |
+
+---
+
+## 🐛 PROBLEMAS RESOLVIDOS
+
+| Problema | Solução | Data |
+|----------|---------|------|
+| Google Trends bloqueado | Substituído por Brave Search | 17/02 |
+| Google Analytics não inicializava | Maton API conectada | 17/02 |
+| OpenClaw API timeout | Conteúdo gerado pelo Ben | 17/02 |
+| Templates duplicados | Arquivo reescrito limpo | 17/02 |
+| Temas repetitivos | Histórico de 30 dias | 17/02 |
+
+---
+
+## 📋 PRÓXIMOS PASSOS (Opcionais)
+
+1. **Produção** - Mudar `MODO_TESTE = false` para lista real
+2. **IA Dinâmica** - Investigar sessions_spawn timeout
+3. **Trello** - Corrigir erro menor na publicação
+
+---
+
+## 🚀 MISSION CONTROL
+
+**Painel de Controle para Agentes Autônomos**
+
+| Item | Valor |
+|------|-------|
+| **Deployment URL** | https://ceaseless-puma-611.convex.cloud |
+| **Local** | `/root/.openclaw/workspace/mission-control/` |
+| **Stack** | Next.js 16 + Convex + Tailwind |
+| **Status** | ✅ Deployado |
+
+### Funcionalidades
+- 📊 **Feed de Atividades** - Registro em tempo real de todas as ações
+- 📅 **Calendário Semanal** - Visualização de tarefas agendadas
+- 🔍 **Pesquisa Global** - Busca em memórias e documentos
+
+### Integração
+Permite que agentes registrem atividades, agendem tarefas e indexem memórias para busca.
+
+Ver documentação completa: `memory/mission-control.md`
+
+---
+
+## 🔗 LINKS IMPORTANTES
+
+| Item | URL |
+|------|-----|
+| **Mission Control** | https://ceaseless-puma-611.convex.cloud |
+| Blog 60maisNews | https://60maiscursos.com.br/blog/ |
+| WhatsApp | https://wa.me/5511953545939 |
+| Maton | https://maton.ai |
+| Maton Settings | https://maton.ai/settings |
+| Maton Connections | https://ctrl.maton.ai |
+
+---
+
+## 👥 CONTATOS
+
+- **Professor Luis** - 60maisPlay
+- **Email teste** - luis7nico@gmail.com
+- **WhatsApp** - (11) 95354-5939
+
+---
+
+*Documentação atualizada por Ben - 17/02/2026*
+*Sistema 60maisNews v2.0*
